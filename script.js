@@ -27,23 +27,9 @@ let studentData = {
     hasOutstanding: selectedOutstanding, // Assuming this is a string "Yes" or "No"
     courses: selectedCourses,
 };
-    // console.log(details);
-    // for (let index = 0; index < product.length; index++) {
-    //     // const element = array[index];
-    //     show.innerHTML += `
-    //     <tr>
-    //     <td>${product[index].name}</td>
-    //     <td>${product[index].price}</td>
-    //     <td>${product[index].quantity}</td>
-    //     <td>${product[index].description}</td>
-    //     </tr>`;
-    //     console.log("hello world!!!!!!!!!!!!!");
-        
-    // }
 
     details.push(studentData);
     for (let index = 0; index < details.length; index++) {
-        // const element = array[index];
         show.innerHTML += `
         <tr>
             <td>${details[index].name}</td>
