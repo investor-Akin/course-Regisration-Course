@@ -9,7 +9,6 @@ let semesterUser = semester.value;
 let selectedRadio = outstandingInput.value;
 let selectedOutstanding = outstandingInput.value;
 
-// this checkboxes no too really clear i use Ai to make it clear and to write the code i no need to lie 
 let allCourseCheckboxes = document.querySelectorAll('.course-checkbox');
 let selectedCourses = [];
 for (let checkbox of allCourseCheckboxes) {
@@ -35,7 +34,7 @@ let studentData = {
             <td>${details[index].name}</td>
             <td>${details[index].dept}</td>
             <td>${details[index].level}</td>
-            <td>${details[index].semester}</td>
+            <td>${details[index].semester}</td>    
             <td>${details[index].hasOutstanding}</td>
             <td>${details[index].courses}</td>`
     }
@@ -43,4 +42,5 @@ let studentData = {
     details = []
     // Clear the form after submission also used Ai buh i understand the code
     event.target.reset(); 
+    localStorage.setItem("save", JSON.stringify(studentData));
 }
